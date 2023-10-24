@@ -1,0 +1,84 @@
+.filters {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: relative;
+}
+
+.search-button {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s; /* Smooth opacity transition on hover */
+    position: absolute;
+    right: 30px;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.search-button:hover {
+    opacity: 0.9;
+}
+
+.search-items {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.locations, .amenities {
+    height: 100%;
+    width: 50%;
+    margin-left: 60px;
+    line-height: 0;
+}
+
+.locations {
+    border-right: #DDDDDD solid 1px;
+}
+
+.search-items h3 {
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.search-items h4 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.popover {
+    width: 100%;
+    background-color: #FAFAFA;
+    border: #DDDDDD solid 1px;
+    border-radius: 4px;
+    list-style: none;
+    padding: 30px;
+    margin-left: -61px;
+    margin-top: 27px;
+    position: relative;
+    display: none;
+}
+
+.state {
+    margin-bottom: 40px;
+}
+
+.cities {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.amenities:hover .popover,
+.locations:hover .popover {
+    display: block;
+}
